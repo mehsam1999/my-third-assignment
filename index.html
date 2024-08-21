@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Tailwind + DaisyUI installation -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/b4570e01d2.js" crossorigin="anonymous"></script>
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'custom-green': 'rgb(171, 239, 95)',
+                'lit-green':'rgba(171, 239, 95, 0.5)',
+                'nav-text': 'rgb(115, 115, 115)',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="font-manrope">
+    <header class="bg-base-200">
+        <nav class="md:container mx-auto">
+            <div class="navbar bg-base-200">
+                <div class="navbar-start">
+                    <a class="text-xl font-bold flex gap-2 items-center">
+                        <div class="bg-custom-green rounded-full w-8 h-8 p-2 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right transform -rotate-45 text-white"></i>
+                        </div>
+                        <p class="text-3xl font-extrabold">Rinterio</p>
+                    </a>
+                </div>
+        
+                <!-- Mobile view dropdown menu -->
+                <div class="navbar-end lg:hidden">
+                    <div class="dropdown dropdown-left">
+                        <div tabindex="0" role="button" class="btn btn-ghost flex items-center justify-center text-3xl">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                class="inline-block h-5 w-5 stroke-current">
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-semibold text-nav-text">
+                        <li class=" hover:text-gray-700 duration-300 ease-in-out font-extrabold"><a>Home</a></li>
+                        <li class=" hover:text-gray-700 duration-300 ease-in-out font-extrabold"><a>Services</a></li>
+                        <li class=" hover:text-gray-700 duration-300 ease-in-out font-extrabold"><a>Portfolio</a></li>
+                        <li class=" hover:text-gray-700 duration-300 ease-in-out font-extrabold"><a>Blogs</a></li>
+                        <li class=" hover:text-gray-700 duration-300 ease-in-out font-extrabold"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex gap-3">
+                    <button class="btn bg-white btn-circle">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </button>
+                    <button class="btn bg-white btn-circle">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <a class="btn text-xl rounded-3xl font-bold bg-custom-green">Book Consult<div class="bg-black rounded-full w-8 h-8 p-2 flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-right transform -rotate-45 text-white"></i>
+                    </div></a>
+                </div>
+            </div>
+        </nav> 
+        <div class="py-5 lg:py-9">
+            <div class="flex flex-col items-center text-center">
+                <img src="./assets/banner.png" class="w-[261.11px] h-[160px] lg:w-[571.17px] lg:h-[350px]" alt="">
+                <h1 class="text-3xl lg:text-6xl font-extrabold w-[335px] lg:w-[1084.28px]">A barn house of this design has a striking appearance</h1>
+                <p class="py-6 text-xs lg:text-xl font-medium w-[335px] lg:w-[972.82px]">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <a class="btn text-xl rounded-3xl font-bold bg-lit-green border border-green-300 min-w-80 lg:min-w-min">View Details<div class="bg-black rounded-full w-8 h-8 p-2 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-right transform -rotate-45 text-white"></i>
+                </div></a>
+            </div>
+          </div>       
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
