@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <!-- Tailwind + DaisyUI installation -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,11 +34,12 @@
     </script>
 </head>
 <body class="font-manrope">
-    <header class="bg-base-200">
+    <header class="bg-base-100 py-2 lg:py-4">
+        <!-- Navbar -->
         <nav class="md:container mx-auto">
-            <div class="navbar bg-base-200">
+            <div class="navbar">
                 <div class="navbar-start">
-                    <a class="text-xl font-bold flex gap-2 items-center">
+                    <a class="btn btn-ghost text-xl font-bold flex gap-2 items-center">
                         <div class="bg-custom-green rounded-full w-8 h-8 p-2 flex items-center justify-center">
                             <i class="fa-solid fa-arrow-right transform -rotate-45 text-white"></i>
                         </div>
@@ -48,7 +49,7 @@
         
                 <!-- Mobile view dropdown menu -->
                 <div class="navbar-end lg:hidden">
-                    <div class="dropdown dropdown-left">
+                    <div class="dropdown dropdown-end">
                         <div tabindex="0" role="button" class="btn btn-ghost flex items-center justify-center text-3xl">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -104,11 +105,12 @@
                 </div>
             </div>
         </nav> 
+        <!-- Banner -->
         <div class="py-5 lg:py-9">
             <div class="flex flex-col items-center text-center">
                 <img src="./assets/banner.png" class="w-[261.11px] h-[160px] lg:w-[571.17px] lg:h-[350px]" alt="">
                 <h1 class="text-3xl lg:text-6xl font-extrabold w-[335px] lg:w-[1084.28px]">A barn house of this design has a striking appearance</h1>
-                <p class="py-6 text-xs lg:text-xl font-medium w-[335px] lg:w-[972.82px]">
+                <p class="py-6 text-xs lg:text-xl text-gray-700 font-medium w-[335px] lg:w-[972.82px]">
                     The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
                 <a class="btn text-xl rounded-3xl font-bold bg-lit-green border border-green-300 min-w-80 lg:min-w-min">View Details<div class="bg-black rounded-full w-8 h-8 p-2 flex items-center justify-center">
@@ -118,7 +120,44 @@
           </div>       
     </header>
     <main>
-
+        <section class="bg-base-200 lg:relative">
+            <div class="hidden lg:absolute lg:left-20 lg:top-8 lg:flex">
+                <img src="./assets/Vector.png" alt="">
+            </div>
+            <div class="md:container mx-auto flex flex-col items-center lg:items-start lg:flex-row py-7 lg:py-20 lg:gap-10">
+                <div class="space-y-5 text-center lg:text-start">
+                    <a class="btn btn-ghost rounded-3xl font-bold flex-1 gap-1 bg-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <p>About Us</p>
+                    </a>
+                    <h3 class="text-xl lg:text-4xl font-bold w-[335px] lg:w-[559.97px]">We design thoughtful,<br>liveable spaces</h3>
+                    <p class="text-xs lg:text-xl font-medium text-gray-700 w-[335px] lg:w-[559.97px]">The barn house captivates with its blend of rustic charm and 
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                    <div class="flex gap-4 p-5 py-6 bg-white w-[335px] lg:w-[559.97px] rounded-2xl">
+                        <div>
+                            <img src="./assets/commercial.png" alt="">
+                        </div>
+                        <div class="text-start">
+                            <h3 class="font-extrabold">Commercial</h3>
+                            <p class="text-gray-500 text-xs lg:text-[1rem]">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-5 py-6 bg-white w-[335px] lg:w-[559.97px] rounded-2xl">
+                        <div>
+                            <img src="./assets/residential.png" alt="">
+                        </div>
+                        <div class="text-start">
+                            <h3 class="font-extrabold">Residential</h3>
+                            <p class="text-gray-500 text-xs lg:text-[1rem]">The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 flex-1">
+                    <img src="./assets/Rectangle.png" alt="" class="w-[335px] h-[223px] lg:w-[573px] lg:h-[545.67px]">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
